@@ -12,6 +12,7 @@ Route.post('/contact', async ({ request, response }) => {
   const body = request.input('email')
 
   mailService.setApiKey(key)
+
   const msg = {
     to: 'felipe4dev@gmail.com',
     from: 'felipe4dev@gmail.com',
