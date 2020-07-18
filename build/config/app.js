@@ -25,7 +25,7 @@ exports.http = {
     forceContentNegotiationToJSON: true,
 };
 exports.logger = {
-    name: Env_1.default.get('APP_NAME'),
+    name: Env_1.default.get('APP_NAME', 'fesoares.io'),
     enabled: true,
     level: Env_1.default.get('LOG_LEVEL', 'info'),
     prettyPrint: Env_1.default.get('NODE_ENV') === 'development',
